@@ -14,8 +14,8 @@
   border-radius: 2px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
-  background: #fff;
-  color: #333;
+  background: #3FAF82;
+  color: #fff;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -26,4 +26,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.menu-icon {
+  width: 80px;
+  height: 52px;
+  cursor: pointer;
 }
