@@ -29,7 +29,7 @@
   width: 80px;
   height: 52px;
   cursor: pointer;
-  z-index: 50;
+  z-index: 239595;
 }
 .menu-icon .line-1,
 .menu-icon .line-2,
@@ -55,11 +55,13 @@
 .menu-icon:hover .line-2,
 .menu-icon:hover .line-3 {
   background-color: #fff;
+  cursor: pointer;
 }
 .menu-icon.active .line-1,
 .menu-icon.active .line-2,
 .menu-icon.active .line-3 {
   background-color: #fff;
+  cursor: pointer;
 }
 .menu-icon.active .line-1 {
   animation: animate-line-1 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
