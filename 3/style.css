@@ -1,6 +1,7 @@
 /* // delete the following line if no text is used
 // edit the line if you wanna use other fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@import url(../global.css);
 
 /* // use only the available space inside the 400x400 frame */
 .frame {
@@ -14,8 +15,8 @@
   border-radius: 2px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
-  background: #fff;
-  color: #333;
+  background: #272C34;
+  color: #fff;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -26,4 +27,51 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.circle {
+  position: relative;
+  overflow: hidden;
+  clip-path: circle(90px);
+  width: 180px;
+  height: 180px;
+}
+
+.circle .sky {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 180px;
+  background-color: #7DDFFC;
+  z-index: 0;
+}
+
+.circle .sun {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 56px;
+  background-color: #F0DE75;
+  z-index: 1;
+}
+
+.circle .pyramid-left {
+  position: absolute;
+
+}
+
+.circle .pyramid-right {
+  position: absolute;
+
+}
+
+.circle .ground {
+  position: absolute;
+
+}
+
+.circle .shadow {
+  position: absolute;
+
 }

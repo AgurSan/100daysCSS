@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  background-color: #18534F;
+}
+
+.button-home {
+  height: 10%;
+  width: auto;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to top right, #18534F 0%, #226D68 100%);
+  border: none;
+  border-radius: 15px;
+}
+
+.button-home:hover {background: linear-gradient(to top right, #D6955B 0%, #FEEAA1 100%)}
+
+.button-home:active {
+  background-color: #e26411;
+  transform: translateY(4px);
+}

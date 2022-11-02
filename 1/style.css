@@ -1,8 +1,10 @@
 /* // delete the following line if no text is used
 // edit the line if you wanna use other fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@import url(../global.css);
 
 /* // use only the available space inside the 400x400 frame */
+
 .frame {
   position: absolute;
   top: 50%;
@@ -105,4 +107,18 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .04em;
+}
+
+.button-home {
+  background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
+  display: block;
+}
+
+.button-home .img {
+  height: 100%;
+  width: auto;
+}
+
+body {
+  background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
 }
