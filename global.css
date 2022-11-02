@@ -1,10 +1,105 @@
+/* imports */
+
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+/* main page */
+
 body {
-  display: flex;
-  background-color: #18534F;
+  box-sizing: border-box;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 1.05em;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(#333, .5);
 }
 
+/* organizing sections */
+
+section {
+  width: 100%;
+  padding: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  min-width: 500px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.35em;
+  height: 2em;
+  line-height: 2em;
+}
+
+a:hover, a:focus {
+  outline: none
+}
+
+/* first section */
+
+
+.first-one {
+  background-color: #CD4436
+}
+
+/* left aimation */
+
+.first-one .left a {
+  overflow: hidden
+}
+
+.first-one .left a span {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  padding: 0px 10px;
+}
+
+.first-one .left a span:before {
+  position: absolute;
+  top: 100%;
+  content: "Title";
+  font-weight: bold;
+}
+
+.first-one .left a span:hover, .first-one .left a span:focus {
+  transform: translateY(-100%);
+}
+
+/* right animation */
+
+
+
+
+/* second section */
+
+
+
+/* links */
+
+
+
+/* buttons */
+
 .button-home {
-  height: 10%;
+  position: relative;
+  top: 10px;
+  height: 24px;
   width: auto;
   display: inline-block;
   padding: 15px 25px;
