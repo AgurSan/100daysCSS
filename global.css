@@ -46,23 +46,23 @@ a {
 }
 
 a:hover, a:focus {
-  outline: none
+  outline: none;
 }
 
 /* first section */
 
 
-.first-one {
-  background-color: #CD4436
+.part-one {
+  background-color: #CD4436;
 }
 
 /* left aimation */
 
-.first-one .left a {
-  overflow: hidden
+.one-left a {
+  overflow: hidden;
 }
 
-.first-one .left a span {
+.one-left a span {
   text-align: center;
   position: relative;
   display: inline-block;
@@ -70,25 +70,83 @@ a:hover, a:focus {
   padding: 0px 10px;
 }
 
-.first-one .left a span:before {
+.one-left a span::before {
   position: absolute;
   top: 100%;
   content: "Title";
   font-weight: bold;
 }
 
-.first-one .left a span:hover, .first-one .left a span:focus {
+.one-left a span:hover, .first-one .left a span:focus {
   transform: translateY(-100%);
 }
 
 /* right animation */
 
+.one-right a {
+  overflow: hidden;
+}
 
+.one-right a span {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  padding: 0px 10px;
+}
 
+.one-right a span::before {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  color: #CD4436;
+  background-color: #fff;
+  content: "Burger Animation";
+  font-weight: bold;
+}
+
+.one-right a span:hover, .first-one .right a span:focus {
+  transform: translateY(-100%);
+}
 
 /* second section */
 
+.part-two {
+  background-color: #435A6B;
+  transition: color 0.3s;
+}
 
+/* left animation */
+
+.part-two .two-left a::before, .part-two .two-left a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.part-two .two-left a::before {
+  top: 0;
+  transform: translateY(-10px);
+}
+
+.part-two .two-left a::after {
+  top: 0;
+  transform: translateY(10px);
+}
+
+.part-two .two-left a:hover, .part-two .two-left a:focus {
+  color: #fff;
+}
+
+.part-two .two-left a:hover::before, .part-two .two-left a:hover::after,.part-two .two-left a:focus::before, .part-two .two-left a:focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* links */
 
