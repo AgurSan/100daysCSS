@@ -36,7 +36,6 @@
   width: 180px;
   height: 180px;
 }
-
 .circle .sky {
   position: absolute;
   left: 0;
@@ -44,6 +43,22 @@
   height: 180px;
   background-color: #7DDFFC;
   z-index: 0;
+  animation: sky-turns-black 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+
+@keyframes sky-turns-black {
+  0% {
+    background: #272C34;
+  }
+  30% {
+      background: #7DDFFC;
+  }
+  70% {
+      background: #7DDFFC;
+  }
+  100% {
+      background: #272C34;
+  }
 }
 
 .circle .sun {
