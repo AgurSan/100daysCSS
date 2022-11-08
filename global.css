@@ -149,6 +149,38 @@ a:hover, a:focus {
   transform: translateY(10%);
 }
 
+/* right animation (same as left one temporary) */
+
+.part-two .two-right a::before, .part-two .two-left a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+}
+
+.part-two .two-right a::before {
+  top: 0;
+  transform: translateY(-10px);
+}
+
+.part-two .two-right a::after {
+  top: 100%;
+  transform: translateY(10px);
+}
+
+.part-two .two-right a:hover, .part-two .two-right a:focus {
+  color: #fff;
+}
+
+.part-two .two-right a:hover::before, .part-two .two-right a:hover::after,.part-two .two-right a:focus::before, .part-two .two-right a:focus::after {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
 /* links */
 
 
