@@ -104,3 +104,54 @@
 .card .parameters .red::before {
   background: #FA7373;
 }
+
+/* graphic */
+
+.stats {
+  position: relative;
+  height: 81px;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.stats div[class*="line-"]{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #F2F2F2;
+}
+.stats .line-1 {
+  top: 0;
+
+}
+.stats .line-2 {
+  top: 40px;
+}
+
+.stats .line-3 {
+  top: inherit;
+  bottom: 0;
+}
+
+.stats .data svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.stats .data polyline {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.stats .data.red polyline {
+  stroke: #FA7373;
+}
+
+.stats .data.blue polyline {
+  stroke: #7BA2FF;
+}
