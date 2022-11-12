@@ -155,3 +155,128 @@
 .stats .data.blue polyline {
   stroke: #7BA2FF;
 }
+
+.stats .data .tooltip {
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translate3d(-50%, 10px, 0);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11px;
+  color: #fff;
+  padding: 8px 6px;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
+}
+
+.stats .data .tooltip:after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 6px;
+  width: 6px;
+  left: 50%;
+  margin-left: -3px;
+  bottom: -3px;
+  transform: rotate(45deg);
+}
+
+.stats .data [class*="point-"] {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.stats .data [class*="point-"]:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.stats .data.red [class^="point-"], .tooltip, .tooltip:after {
+  background: #FA7373;
+}
+
+.stats .data.red .point-1 {
+  left: 7px; top: 43px;
+}
+
+.stats .data.red .point-2 {
+  left: 48px; top: 9px;
+}
+
+.stats .data.red .point-3 {
+  left: 88px; top: 20px;
+}
+
+.stats .data.red .point-4 {
+   left: 128px; top: 8px;
+}
+
+.stats .data.red .point-5 {
+   left: 169px; top: 35px;
+}
+
+.stats .data.red .point-6 {
+  left: 209px; top: 45px;
+}
+
+.stats .data.red .point-7 {
+  left: 249px; top: 16px;
+}
+
+.stats .data.blue [class^="point-"], .tooltip, .tooltip:after {
+  background: #7BA2FF;
+}
+
+.stats .data.blue .point-1 {
+  left: 7px; top: 58px;
+}
+
+.stats .data.blue .point-2 {
+  left: 48px; top: 47px;
+}
+
+.stats .data.blue .point-3 {
+  left: 88px; top: 62px;
+ }
+
+.stats .data.blue .point-4 {
+  left: 128px; top: 52px;
+}
+
+.stats .data.blue .point-5 {
+  left: 169px; top: 58px;
+}
+
+.stats .data.blue .point-6 {
+  left: 209px; top: 71px;
+}
+
+.stats .data.blue .point-7 {
+  left: 249px; top: 61px;
+}
+
+/* days */
+
+.days {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.days .day {
+  display: block;
+  float: left;
+  width: calc(100% / 7);
+  font-size: 9px;
+  color: #949494;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
