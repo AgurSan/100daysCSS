@@ -56,13 +56,13 @@ a:hover, a:focus {
   background-color: #CD4436;
 }
 
-/* left aimation */
+/* first animation */
 
-.one-left a {
+.animation-one a {
   overflow: hidden;
 }
 
-.one-left a span {
+.animation-one a span {
   text-align: center;
   position: relative;
   display: inline-block;
@@ -70,43 +70,14 @@ a:hover, a:focus {
   padding: 0px 10px;
 }
 
-.one-left a span::before {
+.animation-one a span::before {
   position: absolute;
   top: 100%;
-  content: "Title";
+  content: attr(class);
   font-weight: bold;
 }
 
-.one-left a span:hover, .first-one .left a span:focus {
-  transform: translateY(-100%);
-}
-
-/* right animation */
-
-.one-right a {
-  overflow: hidden;
-}
-
-.one-right a span {
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  transition: .3s;
-  padding: 0px 10px;
-}
-
-.one-right a span::before {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  left: 0;
-  color: #CD4436;
-  background-color: #fff;
-  content: "Burger Animation";
-  font-weight: bold;
-}
-
-.one-right a span:hover, .first-one .right a span:focus {
+.animation-one a span:hover, .first-one .left a span:focus {
   transform: translateY(-100%);
 }
 
@@ -117,9 +88,45 @@ a:hover, a:focus {
   transition: color 0.3s;
 }
 
-/* left animation */
+/* second animation */
 
-.part-two .two-left a::before, .part-two .two-left a::after {
+.animation-two a {
+  overflow: hidden;
+}
+
+.animation-two a span {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  padding: 0px 10px;
+}
+
+.animation-two a span::before {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  color: #435A6B;
+  background-color: #fff;
+  content: attr(class);
+  font-weight: bold;
+}
+
+.animation-two a span:hover, .first-one .right a span:focus {
+  transform: translateY(-100%);
+}
+
+/* 3rd section */
+
+section {
+  background-color: #F19F0F;
+  transition: color 0.3s;
+}
+
+/* anim animation */
+
+.animation-three a::before, .animation-three a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -130,28 +137,28 @@ a:hover, a:focus {
   transition: opacity .3s, transform .3s;
 }
 
-.part-two .two-left a::before {
+.animation-three a::before {
   top: 0;
   transform: translateY(-10px);
 }
 
-.part-two .two-left a::after {
+.animation-three a::after {
   top: 100%;
   transform: translateY(10px);
 }
 
-.part-two .two-left a:hover, .part-two .two-left a:focus {
+.animation-three a:hover, .animation-three a:focus {
   color: #fff;
 }
 
-.part-two .two-left a:hover::before, .part-two .two-left a:hover::after,.part-two .two-left a:focus::before, .part-two .two-left a:focus::after {
+ .animation-three a:hover::before,  .animation-three a:hover::after, .animation-three a:focus::before, .animation-three a:focus::after {
   opacity: 1;
   transform: translateY(10%);
 }
 
-/* right animation (same as left one temporary) */
+/* section 2 animation
 
-.part-two .two-right a::before, .part-two .two-left a::after {
+.part-two .two-right a::before, .part-two .animation-three a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -210,4 +217,4 @@ a:hover, a:focus {
 
 .button-home:active {
   background-color: #e26411;
-}
+} */
